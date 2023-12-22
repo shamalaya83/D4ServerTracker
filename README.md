@@ -1,7 +1,7 @@
 # D4ServerTracker 
 Simple collaborative app to keep track of D4 servers status
 
-![Screenshot of the app](https://github.com/shamalaya83/D4ServerTracker/blob/main/image.pngs)
+![Screenshot of the app](https://github.com/shamalaya83/D4ServerTracker/blob/main/image.png)
 
 The star symbol means that you have reviewed the server.  
 The cross symbol means that the last rate is older than 3 days, so its better recheck the server.  
