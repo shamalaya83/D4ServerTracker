@@ -171,7 +171,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "D4 Server Status";
+            this.Text = "D4ServerTracker";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.groupBoxRate.ResumeLayout(false);
