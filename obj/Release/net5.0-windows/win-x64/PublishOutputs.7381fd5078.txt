@@ -1,2 +1,0 @@
-D:\UTILITY\Programming\GITCLONE\D4ServerTracker\bin\Release\net5.0-windows\publish\D4ServerTracker.pdb
-D:\UTILITY\Programming\GITCLONE\D4ServerTracker\bin\Release\net5.0-windows\publish\D4ServerTracker.exe
