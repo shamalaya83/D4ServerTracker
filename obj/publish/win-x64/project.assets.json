@@ -1,0 +1,1119 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "DeviceId/6.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/DeviceId.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.dll": {}
+        }
+      },
+      "DeviceId.Windows/6.6.0": {
+        "type": "package",
+        "dependencies": {
+          "DeviceId": "6.6.0",
+          "Microsoft.Win32.Registry": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DeviceId.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.Windows.dll": {}
+        }
+      },
+      "DeviceId.Windows.Wmi/6.6.0": {
+        "type": "package",
+        "dependencies": {
+          "DeviceId": "6.6.0",
+          "DeviceId.Windows": "6.6.0",
+          "System.Management": "6.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DeviceId.Windows.Wmi.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.Windows.Wmi.dll": {}
+        }
+      },
+      "FireSharp/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Async": "1.0.168",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-net45+sl5+wp8+win8/FireSharp.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl5+wp8+win8/FireSharp.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.dll": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Net.Http/2.2.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.Registry/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.CodeDom/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Management/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.CodeDom": "6.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/System.Management.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Management.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.1/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    },
+    "net5.0-windows7.0/win-x64": {
+      "DeviceId/6.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/DeviceId.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.dll": {}
+        }
+      },
+      "DeviceId.Windows/6.6.0": {
+        "type": "package",
+        "dependencies": {
+          "DeviceId": "6.6.0",
+          "Microsoft.Win32.Registry": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DeviceId.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.Windows.dll": {}
+        }
+      },
+      "DeviceId.Windows.Wmi/6.6.0": {
+        "type": "package",
+        "dependencies": {
+          "DeviceId": "6.6.0",
+          "DeviceId.Windows": "6.6.0",
+          "System.Management": "6.0.0"
+        },
+        "compile": {
+          "lib/net5.0/DeviceId.Windows.Wmi.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.Windows.Wmi.dll": {}
+        }
+      },
+      "FireSharp/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Async": "1.0.168",
+          "Microsoft.Net.Http": "2.2.28",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-net45+sl5+wp8+win8/FireSharp.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl5+wp8+win8/FireSharp.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Async/1.0.168": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.8"
+        },
+        "compile": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.Extensions.dll": {},
+          "lib/net40/Microsoft.Threading.Tasks.dll": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Net.Http/2.2.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.Registry/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.CodeDom/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Management/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.CodeDom": "6.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/System.Management.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp3.1/System.Management.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DeviceId/6.6.0": {
+      "sha512": "2JRxRgo+G1IeZATnIe0tGEGZU2IU7xZ3Epj7tadV7JbsAWBPoANEhrS6Nncw8OJLHVPGtR6K0XalCwYb+hJpnQ==",
+      "type": "package",
+      "path": "deviceid/6.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "deviceid.6.6.0.nupkg.sha512",
+        "deviceid.nuspec",
+        "lib/net35/DeviceId.dll",
+        "lib/net35/DeviceId.xml",
+        "lib/net40/DeviceId.dll",
+        "lib/net40/DeviceId.xml",
+        "lib/net5.0/DeviceId.dll",
+        "lib/net5.0/DeviceId.xml",
+        "lib/net6.0/DeviceId.dll",
+        "lib/net6.0/DeviceId.xml",
+        "lib/net7.0/DeviceId.dll",
+        "lib/net7.0/DeviceId.xml",
+        "lib/net8.0/DeviceId.dll",
+        "lib/net8.0/DeviceId.xml",
+        "lib/netstandard2.0/DeviceId.dll",
+        "lib/netstandard2.0/DeviceId.xml",
+        "readme.md"
+      ]
+    },
+    "DeviceId.Windows/6.6.0": {
+      "sha512": "URHtJlgdrhjgESv6Rcnk0w28tWfmfDOKOxR7Nlj+s/Ct8JhWQ5veGmmDXHQxg04bHq7gPTskbwdXU2SKQOm0lg==",
+      "type": "package",
+      "path": "deviceid.windows/6.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "deviceid.windows.6.6.0.nupkg.sha512",
+        "deviceid.windows.nuspec",
+        "lib/net35/DeviceId.Windows.dll",
+        "lib/net35/DeviceId.Windows.xml",
+        "lib/net40/DeviceId.Windows.dll",
+        "lib/net40/DeviceId.Windows.xml",
+        "lib/net5.0-windows10.0.17763/DeviceId.Windows.dll",
+        "lib/net5.0-windows10.0.17763/DeviceId.Windows.xml",
+        "lib/net5.0/DeviceId.Windows.dll",
+        "lib/net5.0/DeviceId.Windows.xml",
+        "lib/net6.0-windows10.0.17763/DeviceId.Windows.dll",
+        "lib/net6.0-windows10.0.17763/DeviceId.Windows.xml",
+        "lib/net6.0/DeviceId.Windows.dll",
+        "lib/net6.0/DeviceId.Windows.xml",
+        "lib/net7.0-windows10.0.17763/DeviceId.Windows.dll",
+        "lib/net7.0-windows10.0.17763/DeviceId.Windows.xml",
+        "lib/net7.0/DeviceId.Windows.dll",
+        "lib/net7.0/DeviceId.Windows.xml",
+        "lib/net8.0-windows10.0.17763/DeviceId.Windows.dll",
+        "lib/net8.0-windows10.0.17763/DeviceId.Windows.xml",
+        "lib/netstandard2.0/DeviceId.Windows.dll",
+        "lib/netstandard2.0/DeviceId.Windows.xml",
+        "readme.md"
+      ]
+    },
+    "DeviceId.Windows.Wmi/6.6.0": {
+      "sha512": "RMngL2ioAiR4MEUb+17n7IT/FgzSYKK8NFN9YxbZZizl1PVEPyf/fM0SXSMAloOCeDgFu7077SbEW9cnKbPQcQ==",
+      "type": "package",
+      "path": "deviceid.windows.wmi/6.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "deviceid.windows.wmi.6.6.0.nupkg.sha512",
+        "deviceid.windows.wmi.nuspec",
+        "lib/net35/DeviceId.Windows.Wmi.dll",
+        "lib/net35/DeviceId.Windows.Wmi.xml",
+        "lib/net40/DeviceId.Windows.Wmi.dll",
+        "lib/net40/DeviceId.Windows.Wmi.xml",
+        "lib/net5.0/DeviceId.Windows.Wmi.dll",
+        "lib/net5.0/DeviceId.Windows.Wmi.xml",
+        "lib/net6.0/DeviceId.Windows.Wmi.dll",
+        "lib/net6.0/DeviceId.Windows.Wmi.xml",
+        "lib/net7.0/DeviceId.Windows.Wmi.dll",
+        "lib/net7.0/DeviceId.Windows.Wmi.xml",
+        "lib/net8.0/DeviceId.Windows.Wmi.dll",
+        "lib/net8.0/DeviceId.Windows.Wmi.xml",
+        "lib/netstandard2.0/DeviceId.Windows.Wmi.dll",
+        "lib/netstandard2.0/DeviceId.Windows.Wmi.xml",
+        "readme.md"
+      ]
+    },
+    "FireSharp/2.0.4": {
+      "sha512": "laSHpVUBG6iCTUixmpeUmYxie2zbziOBM+LU0v2A0ETE9dUyBA+8aY63xql/o8LXj+kFybBLYUKBUrLCZWaq+A==",
+      "type": "package",
+      "path": "firesharp/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "firesharp.2.0.4.nupkg.sha512",
+        "firesharp.nuspec",
+        "lib/portable-net45+sl5+wp8+win8/FireSharp.dll"
+      ]
+    },
+    "Microsoft.Bcl/1.1.9": {
+      "sha512": "USQ55innJy8K+tAXvVa1O8dUTp2s7pmJ5cJj6Tl02HtGc2xBDj0P2QH5620HbGXIWKWYhydoeQF8Rm/JRDBGhw==",
+      "type": "package",
+      "path": "microsoft.bcl/1.1.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "content/monoandroid/_._",
+        "content/monotouch/_._",
+        "content/net45/_._",
+        "content/portable-net45+win8+wp8+wpa81/_._",
+        "content/portable-net45+win8+wpa81/_._",
+        "content/portable-net451+win81+wpa81/_._",
+        "content/portable-net451+win81/_._",
+        "content/portable-win81+wp81+wpa81/_._",
+        "content/sl4/_._",
+        "content/sl5/_._",
+        "content/win8/_._",
+        "content/wp8/_._",
+        "content/wpa81/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._",
+        "microsoft.bcl.1.1.9.nupkg.sha512",
+        "microsoft.bcl.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.Async/1.0.168": {
+      "sha512": "tUNC02eBwDKpGre0BcNIvblLv1q0Q3DnS/vtkRHj2FE1sXwt386HAudztyl5C0U88hllrqHDvtlz8bK0Y8cHDA==",
+      "type": "package",
+      "path": "microsoft.bcl.async/1.0.168",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.xml",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/net40/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/net40/Microsoft.Threading.Tasks.dll",
+        "lib/net40/Microsoft.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.dll",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.xml",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.xml",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.dll",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.xml",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/sl4/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/sl4/Microsoft.Threading.Tasks.dll",
+        "lib/sl4/Microsoft.Threading.Tasks.xml",
+        "lib/win8/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/win8/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/win8/Microsoft.Threading.Tasks.dll",
+        "lib/win8/Microsoft.Threading.Tasks.xml",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.dll",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.xml",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/wp8/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/wp8/Microsoft.Threading.Tasks.dll",
+        "lib/wp8/Microsoft.Threading.Tasks.xml",
+        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.dll",
+        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.xml",
+        "lib/wpa81/Microsoft.Threading.Tasks.dll",
+        "lib/wpa81/Microsoft.Threading.Tasks.xml",
+        "microsoft.bcl.async.1.0.168.nupkg.sha512",
+        "microsoft.bcl.async.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.14": {
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
+      "type": "package",
+      "path": "microsoft.bcl.build/1.0.14",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "content/net40/_._",
+        "content/netcore45/_._",
+        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
+        "content/sl4-windowsphone71/_._",
+        "content/sl4/_._",
+        "microsoft.bcl.build.1.0.14.nupkg.sha512",
+        "microsoft.bcl.build.nuspec",
+        "tools/Install.ps1",
+        "tools/Microsoft.Bcl.Build.Tasks.dll",
+        "tools/Microsoft.Bcl.Build.targets",
+        "tools/Uninstall.ps1"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.28": {
+      "sha512": "hPL9k+rPIpAj84RZSq3WtJkOD9uMStBovAIAz/0OQ+9hQIwQ2XqQlAhMqI4kw0XDxweJySIqNTMlkhRRuthcPQ==",
+      "type": "package",
+      "path": "microsoft.net.http/2.2.28",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml",
+        "microsoft.net.http.2.2.28.nupkg.sha512",
+        "microsoft.net.http.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.Registry/5.0.0": {
+      "sha512": "dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+      "type": "package",
+      "path": "microsoft.win32.registry/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/Microsoft.Win32.Registry.dll",
+        "lib/net461/Microsoft.Win32.Registry.dll",
+        "lib/net461/Microsoft.Win32.Registry.xml",
+        "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "microsoft.win32.registry.5.0.0.nupkg.sha512",
+        "microsoft.win32.registry.nuspec",
+        "ref/net46/Microsoft.Win32.Registry.dll",
+        "ref/net461/Microsoft.Win32.Registry.dll",
+        "ref/net461/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/de/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/es/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/fr/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/it/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ja/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ko/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/ru/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/zh-hans/Microsoft.Win32.Registry.xml",
+        "ref/netstandard1.3/zh-hant/Microsoft.Win32.Registry.xml",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/net461/Microsoft.Win32.Registry.xml",
+        "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "System.CodeDom/6.0.0": {
+      "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "type": "package",
+      "path": "system.codedom/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.6.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Management/6.0.0": {
+      "sha512": "sHsESYMmPDhQuOC66h6AEOs/XowzKsbT9srMbX71TCXP58hkpn1BqBjdmKj1+DCA/WlBETX1K5WjQHwmV0Txrg==",
+      "type": "package",
+      "path": "system.management/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net6.0/System.Management.xml",
+        "lib/netcoreapp3.1/System.Management.dll",
+        "lib/netcoreapp3.1/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Management.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Management.xml",
+        "system.management.6.0.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.AccessControl/5.0.0": {
+      "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "type": "package",
+      "path": "system.security.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.5.0.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "sha512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "type": "package",
+      "path": "system.security.principal.windows/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.5.0.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "DeviceId >= 6.6.0",
+      "DeviceId.Windows >= 6.6.0",
+      "DeviceId.Windows.Wmi >= 6.6.0",
+      "FireSharp >= 2.0.4",
+      "Newtonsoft.Json >= 13.0.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\shamalata\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\UTILITY\\Programming\\GITCLONE\\D4ServerTracker\\D4ServerTracker.csproj",
+      "projectName": "D4ServerTracker",
+      "projectPath": "D:\\UTILITY\\Programming\\GITCLONE\\D4ServerTracker\\D4ServerTracker.csproj",
+      "packagesPath": "C:\\Users\\shamalata\\.nuget\\packages\\",
+      "outputPath": "D:\\UTILITY\\Programming\\GITCLONE\\D4ServerTracker\\obj\\publish\\win-x64\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\shamalata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "DeviceId": {
+            "target": "Package",
+            "version": "[6.6.0, )"
+          },
+          "DeviceId.Windows": {
+            "target": "Package",
+            "version": "[6.6.0, )"
+          },
+          "DeviceId.Windows.Wmi": {
+            "target": "Package",
+            "version": "[6.6.0, )"
+          },
+          "FireSharp": {
+            "target": "Package",
+            "version": "[2.0.4, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'FireSharp 2.0.4' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' e non mediante il framework di destinazione del progetto 'net5.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "FireSharp",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'Microsoft.Bcl 1.1.9' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' e non mediante il framework di destinazione del progetto 'net5.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "Microsoft.Bcl",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'Microsoft.Bcl.Async 1.0.168' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' e non mediante il framework di destinazione del progetto 'net5.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "Microsoft.Bcl.Async",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'Microsoft.Net.Http 2.2.28' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' e non mediante il framework di destinazione del progetto 'net5.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}

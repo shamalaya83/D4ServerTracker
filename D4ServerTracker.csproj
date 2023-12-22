@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>D4ServerStatus.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DeviceId" Version="6.6.0" />
+    <PackageReference Include="DeviceId.Windows" Version="6.6.0" />
+    <PackageReference Include="DeviceId.Windows.Wmi" Version="6.6.0" />
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
